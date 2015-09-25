@@ -1,9 +1,9 @@
 from detectors.face import FaceDetector
-from imgtools import imgtools
 from picamera.array import PiArrayOutput
 from picamera import PiCamera
-from PIL import Image
 from sklearn.svm import LinearSVC
+from PIL import Image
+import RPi.GPIO as gpio
 import numpy as np
 import argparse
 import time
@@ -19,6 +19,14 @@ camera = PiCamera()
 camera.resolution = (640, 480)
 camera.framerate = 32
 raw_capture = PiArrayOutput(camera, size=(640, 480))
+
+happy = 18
+sad = 15
+
+gpio.setmode(gpio.BCM)
+gpio.setwarnings(False)
+gpio.setup(happy, gpio.OUT)
+gpio.setup(sad, gpio.OUT)
 
 fd = FaceDetector(args['face'])
 faceCascade = cv2.CascadeClassifier(args['face'])
@@ -45,9 +53,6 @@ clf.fit(imgs, labels)
 
 print('Finished learning')
 
-scale_factor = input('Enter scale factor: ')
-min_neighbours = input('Enter minimum neighbours: ')
-
 stream = io.BytesIO()
 for f in camera.capture_continuous(stream, format='jpeg'):
      stream.seek(0)
@@ -58,29 +63,14 @@ for f in camera.capture_continuous(stream, format='jpeg'):
 
      for (x, y, w, h) in faces:
          exp = clf.predict(arr[y: y + 150, x: x + 150].flatten())
-         if exp == 1:
+         if exp:
              print('Happy')
+             gpio.output(sad, 0)
+             gpio.output(happy, 1)
          else:
              print('Sad/Neutral')
+             gpio.output(happy, 0)
+             gpio.output(sad, 1)
 
      stream.seek(0)
      stream.truncate()
-
-#for f in camera.capture_continuous(raw_capture, format='bgr', use_video_port = True):
-#    frame = Image.open(f).convert('L')
-#    fra = np.array(frame)
-#    print(fra)
-    # frame = imgtools.resize(frame, width = 300)
-    # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-#    faces = faceCascade.detectMultiScale(fra)
-    # face_rects = fd.detect_face(gray, scale_factor, min_neighbours, minSize = (30, 30))
-#    frame_clone = frame.copy()
-
-#    for (x, y, w, h) in faces:
-#        cv2.rectangle(frame_clone, (x, y), (x + w, y + h), (0, 255, 0), 2)
-
-#    cv2.imshow('Face', frame_clone)
-#    raw_capture.truncate(0)
-
-#    if cv2.waitKey(1) & 0xFF == ord('q'):
-#        break
