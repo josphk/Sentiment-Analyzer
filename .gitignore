@@ -1,3 +1,5 @@
+.DS_Store
+.ideas
 yalefaces
 cpp/build
 cpp/src/test

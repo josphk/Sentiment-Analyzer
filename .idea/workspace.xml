@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ccc33ff-0195-4d85-834c-6d8588dc7a52" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/detect_faces.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/detect_faces_cam.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/detect_static/detect_faces.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/detectors/FaceDetector.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/detectors/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/detectors/face.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/face_profile.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgtools/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgtools/imgtools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/cam_test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/detect_exp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/detect_faces.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python/detect_faces_cam.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.centerlight" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.glasses" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.happy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.leftlight" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.noglasses" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.normal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.rightlight" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.sad" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.sleepy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.surprised" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject14.wink" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.centerlight" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.glasses" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.happy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.leftlight" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.noglasses" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.normal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.rightlight" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.sad" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.sleepy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.surprised" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yalefaces_test/subject15.wink" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="expression-detector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,20 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7777777">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.021186441">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detect_expression.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detect_expression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/detect_expression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.67346936">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -221,21 +186,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7777777">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/detect_expression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.67346936">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.021186441">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
